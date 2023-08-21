@@ -3,12 +3,12 @@ Remote control
 
 To develop the task used Pattern design approach
 
-Command - conversation all device interfaces to common interface DeviceCommandInterface
-Strategy - possibility to use different realization for historyManager and positionsManager,
+- Command - conversation all device interfaces to common interface DeviceCommandInterface
+- Strategy - possibility to use different realization for historyManager and positionsManager,
     interfaces HistoryManagerInterface and PositionsManagerInterface respectively
-Factory & Singleton - for creating configured remote control as singleton
-Facade - for creating remote control
-Observer - control component notifies other components about performed actions
+- Factory & Singleton - for creating configured remote control as singleton
+- Facade - for creating remote control
+- Observer - control component notifies other components about performed actions
 
 Start the script
 
@@ -19,6 +19,7 @@ php -f App.php
 Object using explanation
 
 ```php
+<?php
     //base usage create singleton
     $control = OptimalControl::instance();
     $control->performOn(5);
